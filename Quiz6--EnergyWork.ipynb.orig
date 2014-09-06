@@ -1,7 +1,11 @@
 {
  "metadata": {
   "name": "",
+<<<<<<< HEAD
+  "signature": "sha256:911c5c7db4ab9e819da5708a773687a41d1d5e46b8598e9f08e89af83c4311ab"
+=======
   "signature": "sha256:9e174e152fb100d3fc5c0b2a1040feb3df17b0f13f0d188c042ec137b6afb748"
+>>>>>>> problemsets
  },
  "nbformat": 3,
  "nbformat_minor": 0,
@@ -12,9 +16,13 @@
      "cell_type": "code",
      "collapsed": false,
      "input": [
+<<<<<<< HEAD
+      "import numpy as np"
+=======
       "import numpy as np\n",
       "import pandas as pd\n",
       "%pylab inline"
+>>>>>>> problemsets
      ],
      "language": "python",
      "metadata": {
@@ -22,6 +30,9 @@
        "slide_type": "skip"
       }
      },
+<<<<<<< HEAD
+     "outputs": [],
+=======
      "outputs": [
       {
        "output_type": "stream",
@@ -129,12 +140,15 @@
        ]
       }
      ],
+>>>>>>> problemsets
      "prompt_number": 2
     },
     {
      "cell_type": "code",
      "collapsed": false,
      "input": [
+<<<<<<< HEAD
+=======
       "plt.scatter(problem1_data['disp'],problem1_data['force'],s=80,facecolors='none',edgecolors='k')\n",
       "plt.xlim([0,np.max(problem1_data['disp'])*1.1])\n",
       "plt.ylim([0,np.max(problem1_data['force'])*1.1])\n",
@@ -294,12 +308,17 @@
      "collapsed": false,
      "input": [
       "# Initialize all defined quantities\n",
+>>>>>>> problemsets
       "m= 500. # kg\n",
       "v0= 12. # m/s\n",
       "hA= hE= hF= hG= 10 # m\n",
       "g= 9.81 # m/s^2\n",
+<<<<<<< HEAD
+      "r= 30. # m (radius of curvature)"
+=======
       "rD= 20. # m (radius of curvature at D)\n",
       "rF= 30. # m (radius of curvature at F)"
+>>>>>>> problemsets
      ],
      "language": "python",
      "metadata": {
@@ -308,13 +327,20 @@
       }
      },
      "outputs": [],
+<<<<<<< HEAD
+     "prompt_number": 3
+=======
      "prompt_number": 6
+>>>>>>> problemsets
     },
     {
      "cell_type": "heading",
      "level": 4,
      "metadata": {},
      "source": [
+<<<<<<< HEAD
+      "a) Draw FBDs for the rollercoaster at points D and F. Indicate the direction of acceleration for each FBD, if any. If there is no acceleration at that point then indicate $\\textbf{a} = \\vec{0}\\,N$"
+=======
       "a) Draw FBDs for the roller coaster at points $D$ and $F$. Indicate the direction of acceleration for each FBD, if any. If acceleration is zero at that point then indicate $a = 0\\,m/s^2$."
      ]
     },
@@ -327,6 +353,7 @@
      },
      "source": [
       "<img src=\"http://www.apsva.us/cms/lib2/VA01000586/Centricity/domain/3724/intensified/ps-images/Quiz6--FBD.jpeg\" />"
+>>>>>>> problemsets
      ]
     },
     {
@@ -351,6 +378,16 @@
      "source": [
       "For the car to \"just make it over\", the car will have a velocity of $0\\,m/s$, and therefore a kinetic energy of $0\\,J$. Threfore, \n",
       "\n",
+<<<<<<< HEAD
+      "$PE_{i} + KE_{i} = PE_{f}$\n",
+      "\n",
+      "\n",
+      "$mgh_{A} + \\frac{1}{2}mv^2 = mgh_{B}$\n",
+      "\n",
+      "Solving for $h_{B}$ gives:\n",
+      "\n",
+      "$h_{B} = h_{A} + \\frac{1}{2}\\frac{v^2}{g}$"
+=======
       "\\begin{align}\n",
       "PE_{i} + KE_{i} &= PE_{f}\\\\\n",
       "mgh_{A} + \\frac{1}{2}mv_{A}^2 &= mgh_{B}\n",
@@ -359,15 +396,21 @@
       "Solving for $h_{B}$ gives:\n",
       "\n",
       "$$h_{B} = h_{A} + \\frac{1}{2}\\frac{v_{A}^2}{g}$$"
+>>>>>>> problemsets
      ]
     },
     {
      "cell_type": "code",
      "collapsed": false,
      "input": [
+<<<<<<< HEAD
+      "def find_hB(velocity, height_A, g= 9.81):\n",
+      "    return height_A + 0.5 * velocity**2 / g\n",
+=======
       "def find_hB(velocity, height_A, acc_g= 9.81):\n",
       "    \"Find height at point B\"\n",
       "    return height_A + 0.5 * velocity**2 / acc_g\n",
+>>>>>>> problemsets
       "\n",
       "hB= find_hB(v0,hA)\n",
       "\n",
@@ -388,7 +431,11 @@
        ]
       }
      ],
+<<<<<<< HEAD
+     "prompt_number": 4
+=======
      "prompt_number": 7
+>>>>>>> problemsets
     },
     {
      "cell_type": "heading",
@@ -410,6 +457,9 @@
       }
      },
      "source": [
+<<<<<<< HEAD
+      "As h --> 17.34 m, v --> 0 m/s, therefore $\\Sigma F = F_{N} - F_{g} = \\frac{mv^2}{r} = 0\\,N$ and $F_{N} = F_{g}$. The force from the track (the normal force) is equal to the force of gravity (the weight)."
+=======
       "As $h \\rightarrow 17.34\\,m$, $v \\rightarrow 0\\,m/s$, therefore,\n",
       "\n",
       "$$\\Sigma F = F_{N} - F_{g} = \\frac{mv^2}{r} = 0\\,N$$\n",
@@ -419,6 +469,7 @@
       "$$F_{N} = F_{g}$$\n",
       "\n",
       "The force from the track (the normal force) is equal to the force of gravity (the weight)."
+>>>>>>> problemsets
      ]
     },
     {
@@ -443,7 +494,11 @@
        ]
       }
      ],
+<<<<<<< HEAD
+     "prompt_number": 5
+=======
      "prompt_number": 8
+>>>>>>> problemsets
     },
     {
      "cell_type": "heading",
@@ -501,7 +556,11 @@
        ]
       }
      ],
+<<<<<<< HEAD
+     "prompt_number": 6
+=======
      "prompt_number": 9
+>>>>>>> problemsets
     },
     {
      "cell_type": "heading",
@@ -523,6 +582,21 @@
       }
      },
      "source": [
+<<<<<<< HEAD
+      "$\\Sigma F = F_{N} - mg = \\frac{mv^2}{r}$\n",
+      "\n",
+      "Solving for $F_{N}$,\n",
+      "\n",
+      "$F_{N} = mg + \\frac{mv^2}{r}$\n",
+      "\n",
+      "To find the velocity at the bottom, \n",
+      "\n",
+      "$mgh_{A} + \\frac{1}{2}mv_{A}^2 = mgh_{D} + \\frac{1}{2}mv_{D}^2$\n",
+      "\n",
+      "Since $h_{D} = 0\\,m$, \n",
+      "\n",
+      "$v_{D} = \\sqrt{2gh_{A} + v_{A}^2}$"
+=======
       "$$\\Sigma F = F_{N} - mg = \\frac{mv^2}{r}$$\n",
       "\n",
       "Solving for $F_{N}$,\n",
@@ -536,6 +610,7 @@
       "Since $h_{D} = 0\\,m$, \n",
       "\n",
       "$$v_{D} = \\sqrt{2gh_{A} + v_{A}^2}$$"
+>>>>>>> problemsets
      ]
     },
     {
@@ -543,6 +618,14 @@
      "collapsed": false,
      "input": [
       "def find_vD(heightA,velocityA,g=9.81):\n",
+<<<<<<< HEAD
+      "    return np.sqrt(2. * g * heightA + velocityA**2)\n",
+      "\n",
+      "F_ND= m*g + m * find_vD(hA,v0)**2 / r \n",
+      "\n",
+      "print \"vD = %0.2f m/s\" % find_vD(hA,v0)\n",
+      "print \"F_ND = %0.0f N\" % F_ND"
+=======
       "    \"Find velocity at point D\"\n",
       "    return np.sqrt(2. * g * heightA + velocityA**2)\n",
       "\n",
@@ -553,6 +636,7 @@
       "\n",
       "print \"vD = %0.2f m/s\" % find_vD(hA,v0)\n",
       "print \"F_ND = %0.0f N\" % F_ND(m,find_vD(hA,v0),rD,g)"
+>>>>>>> problemsets
      ],
      "language": "python",
      "metadata": {
@@ -566,11 +650,19 @@
        "stream": "stdout",
        "text": [
         "vD = 18.44 m/s\n",
+<<<<<<< HEAD
+        "F_ND = 10575 N\n"
+       ]
+      }
+     ],
+     "prompt_number": 7
+=======
         "F_ND = 13410 N\n"
        ]
       }
      ],
      "prompt_number": 10
+>>>>>>> problemsets
     },
     {
      "cell_type": "heading",
@@ -592,10 +684,17 @@
       }
      },
      "source": [
+<<<<<<< HEAD
+      "$$\\Sigma F_{y} = F_{N}\\cos\\theta - mg = 0$$\n",
+      "\n",
+      "$$\\Sigma F_{x} = F_{N}\\sin\\theta = \\frac{mv^2}{r}$$\n",
+      "\n",
+=======
       "\\begin{align}\n",
       "\\Sigma F_{y} &= F_{N}\\cos\\theta - mg = 0\\\\\n",
       "\\Sigma F_{x} &= F_{N}\\sin\\theta = \\frac{mv^2}{r}\n",
       "\\end{align}\n",
+>>>>>>> problemsets
       "Given that point F is at the same height of point A, $v_{A} = v_{F} = 12\\,m/s$ by the conservation of mechanical energy.\n",
       "\n",
       "Solving for $F_{N}$ from $\\Sigma F_{y}$,\n",
@@ -625,10 +724,21 @@
       "def find_magnitude(mass,acc_g,th):\n",
       "    return mass * acc_g / np.cos(np.deg2rad(th))\n",
       "\n",
+<<<<<<< HEAD
+      "print \"theta = %0.2f degrees, FN = %0.2f N\" % (find_theta(v0,r,g), find_magnitude(m,g,find_theta(v0,r,g)))"
+     ],
+     "language": "python",
+     "metadata": {
+      "slideshow": {
+       "slide_type": "slide"
+      }
+     },
+=======
       "print \"theta = %0.2f degrees, FN = %0.2f N\" % (find_theta(v0,rF,g), find_magnitude(m,g,find_theta(v0,rF,g)))"
      ],
      "language": "python",
      "metadata": {},
+>>>>>>> problemsets
      "outputs": [
       {
        "output_type": "stream",
@@ -638,7 +748,11 @@
        ]
       }
      ],
+<<<<<<< HEAD
+     "prompt_number": 12
+=======
      "prompt_number": 11
+>>>>>>> problemsets
     },
     {
      "cell_type": "heading",
@@ -658,6 +772,14 @@
       "\n",
       "In our case, the roller coaster is at a height of 10 meters so it's velocity is equal to $v_{A} = 12\\, m/s$, the velocity at the beginning of the track. When it is completely stopped it's velocity is $0\\,m/s$. Therefore, \n",
       "\n",
+<<<<<<< HEAD
+      "$$F_{brakes}\\times \\Delta x = KE_{f} - KE_{i}$$\n",
+      "$$ = 0 - \\frac{1}{2}mv^2$$\n",
+      "\n",
+      "Solving for $F_{brakes}$ gives,\n",
+      "\n",
+      "$$F_{brakes} = -\\frac{\\frac{1}{2}mv^2}{\\Delta x}$$"
+=======
       "\\begin{align}\n",
       "F_{brakes}\\cdot \\Delta x &= KE_{f} - KE_{i}\\\\\n",
       " &= 0 - \\frac{1}{2}mv^2\n",
@@ -668,6 +790,7 @@
       "$$F_{brakes} = -\\frac{mv^2}{2\\Delta x}$$\n",
       "\n",
       "The absolute value of $F_{brakes}$ will then give us the magnitude."
+>>>>>>> problemsets
      ]
     },
     {
@@ -675,10 +798,16 @@
      "collapsed": false,
      "input": [
       "def find_Fbrakes(mass,velocity,displacement):\n",
+<<<<<<< HEAD
+      "    return -0.5 * mass * velocity**2 / displacement\n",
+      "\n",
+      "print \"Fbrakes = %0.0f N\" % find_Fbrakes(m,v0,25)"
+=======
       "    \"Find the force provided by brakes to bring rollercoaster car to a stop\"\n",
       "    return -0.5 * mass * velocity**2 / displacement\n",
       "\n",
       "print \"Fbrakes = %0.0f N\" % np.abs(find_Fbrakes(m,v0,25.))"
+>>>>>>> problemsets
      ],
      "language": "python",
      "metadata": {},
@@ -687,11 +816,27 @@
        "output_type": "stream",
        "stream": "stdout",
        "text": [
+<<<<<<< HEAD
+        "Fbrakes = -1440 N\n"
+       ]
+      }
+     ],
+     "prompt_number": 16
+    },
+    {
+     "cell_type": "code",
+     "collapsed": false,
+     "input": [],
+     "language": "python",
+     "metadata": {},
+     "outputs": []
+=======
         "Fbrakes = 1440 N\n"
        ]
       }
      ],
      "prompt_number": 14
+>>>>>>> problemsets
     }
    ],
    "metadata": {}
